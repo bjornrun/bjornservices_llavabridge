@@ -53,7 +53,7 @@ source venv/bin/activate
 Install the required dependencies listed in required_client.txt.
 
 ```bash
-pip install -r required_client.txt
+pip install -r requirements_client.txt
 ```
 
 ### Step 4: Run the Streamlit App
