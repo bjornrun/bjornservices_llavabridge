@@ -29,4 +29,36 @@ Key features:
 4. The server sends back a response based on the image analysis.
 5. The client displays the response to the user.
 
-F
+## How to run the client
+
+
+Follow these steps to set up the project and run the Streamlit app.
+
+### Step 1: Create a Virtual Environment
+
+Create a virtual environment named `venv`.
+
+```bash
+python3 -m venv venv
+```
+
+### Step 2: Activate the Virtual Environment
+Activate the virtual environment. Use the following command for Unix-based systems (Linux and macOS):
+
+```bash
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+Install the required dependencies listed in required_client.txt.
+
+```bash
+pip install -r required_client.txt
+```
+
+### Step 4: Run the Streamlit App
+Run the Streamlit app using the following command:
+
+```bash
+streamlit run client.py
+```
