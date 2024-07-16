@@ -1,0 +1,10 @@
+Flask
+Pillow
+requests
+torch
+transformers
+optimum-habana
+gunicorn
+mesop
+opencv-python
+prometheus_client

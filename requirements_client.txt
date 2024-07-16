@@ -1,0 +1,8 @@
+Pillow
+requests
+gunicorn
+mesop
+opencv-python
+Flask
+prometheus_client
+pandas
