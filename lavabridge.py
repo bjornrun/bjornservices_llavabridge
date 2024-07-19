@@ -95,6 +95,14 @@ def generate():
         full_text = result[0][0]['generated_text']
         assistant_text = full_text.split("ASSISTANT:")[-1].strip() if "ASSISTANT:" in full_text else full_text
 
+        # Clear CUDA cache
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        
+        # Explicit garbage collection
+        import gc
+        gc.collect()
+        
         return jsonify({
             "text": assistant_text,
             "time_taken": duration * 1000,  # Convert to milliseconds
